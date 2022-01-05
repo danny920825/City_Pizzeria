@@ -6,7 +6,7 @@ const Menu = ({name, desc, menu, addItem}) => {
             <div className="container">
                 <div className="intro">
                     <h2 className="text-center">{name}</h2>
-                    <p className="text-center">{desc}</p>
+                    {/* <p className="text-center">{desc}</p> */}
                 </div>
                 <div className="row justify-content-center features">
                     {menu.map((pizza) => (

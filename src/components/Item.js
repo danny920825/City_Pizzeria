@@ -6,10 +6,11 @@ const Item = ({item, addItem}) => {
                 <h3 className="name">{item.name}</h3>
                 <p className="description">{item.desc}</p>
                 <div className="d-flex justify-content-around align-items-center">
-                    <button onClick={() => addItem(item)} className="btn btn-success" type="button">
+                    <button onClick={() => addItem(item)} className="btn addToCartButton" type="button">
                         Add to basket
                     </button>
-                    <span className="badge rounded-pill bg-danger price">${item.price}</span>
+                    <span className="badge rounded-pill priceBadge price">${item.price}</span>
+                    {/* bg-danger */}
                 </div>
             </div>
         </div>

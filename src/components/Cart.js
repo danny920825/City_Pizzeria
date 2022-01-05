@@ -56,9 +56,9 @@ function Cart({items, remove}) {
                             <p>${GST}</p>
                         </div>
                         <hr/>
-                        <button className="btn btn-success d-flex justify-content-between align-items-baseline"
+                        <button className="btn addToCartButton d-flex justify-content-between align-items-baseline"
                                 id="checkout" type="button">Checkout<span
-                            className="badge bg-success">${totalPrice + GST}</span>
+                            className="badge priceBadge">${totalPrice + GST}</span>
                         </button>
                     </div>
                 </div>

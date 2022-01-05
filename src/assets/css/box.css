@@ -1,6 +1,6 @@
 .features-boxed {
     color: #f1faee;
-    background-color: var(--bs-gray-dark);
+    background-color: #F4DFBA;
 }
 
 .features-boxed p {
@@ -11,9 +11,10 @@
     font-weight: normal;
     margin-bottom: 40px;
     padding-top: 40px;
-    color: inherit;
+    color: var(--bs-gray-dark);
     font-family: 'Lilita One', cursive;
     font-size: 3em;
+
 }
 
 @media (max-width: 767px) {
@@ -32,6 +33,7 @@
 
 .features-boxed .intro p {
     margin-bottom: 0;
+    color: var(--bs-gray-dark);
 }
 
 .features-boxed .features {
@@ -45,7 +47,7 @@
 .features-boxed .item .box {
     text-align: center;
     padding: 30px;
-    background-color: #fff;
+    background-color: var(--bs-gray-dark);
     margin-bottom: 30px;
     border-radius: 5px;
 }
@@ -61,7 +63,7 @@
 .features-boxed .item .name {
     margin-bottom: 8px;
     margin-top: 0;
-    color: var(--bs-gray-dark);
+    color: var(--bs-white);
 }
 
 .features-boxed .item .description {
@@ -81,6 +83,28 @@
 span {
     margin-left: 10px;
 }
+
+.addToCartButton{
+    color: #fff;
+    background-color: #876445;
+    border-color: #CA965C;
+}
+
+
+.addToCartButton:hover{
+    background-color: #CA965C;
+    color: #fff;
+    border-color: #876445;
+}
+
+.priceBadge{
+    color: #222;
+    border-radius: 50rem!important;
+    background-color: #EEC373!important;
+}
+
+
+
 
 
 

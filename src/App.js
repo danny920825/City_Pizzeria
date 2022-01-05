@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./assets/css/styles.css";
 import "./assets/css/box.css";
 import Header from "./components/Header";
@@ -11,32 +12,32 @@ function App() {
     const [basket, setBasket] = useState([]);
 
     // Add to basket
-    const addItem = (pizza) => {
+    const addItem = (producto) => {
         // Check if the item exist or not
-        const exist = basket.find((item) => item.id === pizza.id);
+        const exist = basket.find((item) => item.id === producto.id);
         if (exist) {
-            setBasket(basket.map(item => item.id === pizza.id ? {...exist, qty: exist.qty + 1} : item));
+            setBasket(basket.map(item => item.id === producto.id ? {...exist, qty: exist.qty + 1} : item));
         } else {
-            setBasket([...basket, {...pizza, qty: 1}]);
+            setBasket([...basket, {...producto, qty: 1}]);
         }
     };
 
     // Remove from basket
-    const removeItem = (pizza) => {
+    const removeItem = (producto) => {
         // Check if the item exist or not
-        const exist = basket.find((item) => item.id === pizza.id);
+        const exist = basket.find((item) => item.id === producto.id);
         if (exist.qty === 1) {
-            setBasket(basket.filter((item) => item.id !== pizza.id));
+            setBasket(basket.filter((item) => item.id !== producto.id));
         } else {
-            setBasket(basket.map(item => item.id === pizza.id ? {...exist, qty: exist.qty - 1} : item));
+            setBasket(basket.map(item => item.id === producto.id ? {...exist, qty: exist.qty - 1} : item));
         }
     };
 
     return (
         <div className="App">
             <div>
-                <Header name="City Pizzeria" basket={basket.length}/>
-                <Menu name="Pizzas" desc="Tasty pizzas made with fresh ingredients" menu={Items} addItem={addItem}/>
+                <Header name="Pan Comido" basket={basket.length}/>
+                <Menu name="Panes" desc="" menu={Items} addItem={addItem}/>
                 <Cart items={basket} remove={removeItem}/>
             </div>
         </div>

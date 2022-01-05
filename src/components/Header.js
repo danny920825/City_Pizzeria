@@ -13,12 +13,11 @@ const Header = ({name, basket}) => {
                 </button>
                 <div className="collapse navbar-collapse" id="navcol-1">
                     <ul className="navbar-nav align-items-baseline ms-auto">
-                        <li className="nav-item"><a className="nav-link active" href="#">Menu</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#">Deals</a></li>
+                        
                         <li className="nav-item">
                             <button onClick={openNav} className="btn btn-outline-dark d-flex align-items-end"
                                     type="button"><i
-                                className="fas fa-shopping-basket"/><span className="badge bg-danger">{basket}</span>
+                                className="fas fa-shopping-basket"/><span className="badge priceBadge">{basket}</span>
                             </button>
                         </li>
                     </ul>
