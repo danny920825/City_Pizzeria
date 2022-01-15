@@ -12,7 +12,7 @@ function Cart({items, remove}) {
 
     return (
         <div id="mySidenav" className="sidenav">
-            <a href="#" className="closebtn" onClick={closeNav}>&times;</a>
+            <a href="/" className="closebtn" onClick={closeNav}>&times;</a>
             <div className="container" id="container">
                 <div className="row">
                     <div className="col-md-6">
