@@ -1,0 +1,286 @@
+body {
+    background: #fff;
+    font-family: Cantarell, sans-serif;
+  }
+  
+  ul {
+    font-size: 1.2em;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lilita One', serif;
+  }
+  
+  /*
+    Nav-bar
+  */
+  .navigation-clean {
+    background: #fff;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    color: #333;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+  }
+  
+  @media (min-width:768px) {
+    .navigation-clean {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  
+  .navigation-clean .navbar-brand {
+    font-size: 2em;
+  }
+  
+  .navigation-clean .navbar-brand:hover {
+    color: #222;
+  }
+  
+  .navigation-clean .navbar-toggler {
+    border-color: #ddd;
+  }
+  
+  .navigation-clean .navbar-toggler:hover, .navigation-clean .navbar-toggler:focus {
+    background: none;
+  }
+  
+  .navigation-clean .navbar-toggler {
+    color: #888;
+  }
+  
+  .navigation-clean.navbar-light .navbar-nav .nav-link.active, .navigation-clean.navbar-light .navbar-nav .nav-link.active:focus, .navigation-clean.navbar-light .navbar-nav .nav-link.active:hover {
+    color: #8f8f8f;
+    box-shadow: none;
+    background: none;
+    pointer-events: none;
+  }
+  
+  .navigation-clean.navbar .navbar-nav .nav-link {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  
+  .navigation-clean.navbar-light .navbar-nav .nav-link {
+    color: #465765;
+  }
+  
+  .navigation-clean.navbar-light .navbar-nav .nav-link:focus, .navigation-clean.navbar-light .navbar-nav .nav-link:hover {
+    color: #37434d !important;
+    background-color: transparent;
+  }
+  
+  .navigation-clean .navbar-nav > li > .dropdown-menu {
+    margin-top: -5px;
+    box-shadow: none;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  
+  .navigation-clean .dropdown-menu .dropdown-item:focus, .navigation-clean .dropdown-menu .dropdown-item {
+    line-height: 2;
+    color: #37434d;
+  }
+  
+  .navigation-clean .dropdown-menu .dropdown-item:focus, .navigation-clean .dropdown-menu .dropdown-item:hover {
+    background: #eee;
+    color: inherit;
+  }
+  
+  .navigation-clean {
+    background: #876445;
+    font-family: 'Lilita One', cursive;
+  }
+  
+
+  /*
+    Box
+  */
+  .features-boxed {
+    color: #f1faee;
+    background-color: #F4DFBA;
+}
+
+.features-boxed p {
+    color: #7d8285;
+}
+
+.features-boxed h2 {
+    font-weight: normal;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: var(--bs-gray-dark);
+    font-family: 'Lilita One', cursive;
+    font-size: 3em;
+
+}
+
+@media (max-width: 767px) {
+    .features-boxed h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 2em;
+    }
+}
+
+.features-boxed .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.features-boxed .intro p {
+    margin-bottom: 0;
+    color: var(--bs-gray-dark);
+}
+
+.features-boxed .features {
+    padding: 50px 0;
+}
+
+.features-boxed .item {
+    text-align: center;
+}
+
+.features-boxed .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--bs-gray-dark);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.features-boxed .item .pizza-img {
+    /*font-size: 60px;*/
+    /*color: #1485ee;*/
+    margin-top: 20px;
+    margin-bottom: 35px;
+    height: 200px;
+}
+
+.features-boxed .item .name {
+    margin-bottom: 8px;
+    margin-top: 0;
+    color: var(--bs-white);
+}
+
+.features-boxed .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1em;
+}
+
+.fas.fa-shopping-basket {
+    font-size: 1.5em;
+}
+
+span {
+    margin-left: 10px;
+}
+
+.addToCartButton{
+    color: #fff;
+    background-color: #876445;
+    border-color: #CA965C;
+}
+
+
+.addToCartButton:hover{
+    background-color: #CA965C;
+    color: #fff;
+    border-color: #876445;
+}
+
+.priceBadge{
+    color: #222;
+    border-radius: 50rem!important;
+    background-color: #EEC373!important;
+}
+
+
+/*
+    Basket
+*/
+body {
+    font-family: 'Cantarell', serif;
+    color: var(--bs-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lilita One', serif;
+}
+
+#table-header {
+    color: var(--bs-light);
+}
+
+#table-body {
+    color: var(--bs-light);
+}
+
+#remove {
+    cursor: pointer;
+}
+
+#container {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#checkout {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.sidenav {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: #111;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+

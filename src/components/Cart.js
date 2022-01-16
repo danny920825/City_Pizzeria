@@ -1,4 +1,4 @@
-import '../assets/css/basket.css';
+
 
 function Cart({items, remove}) {
     const closeNav = () => {

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./assets/css/styles.css";
-import "./assets/css/box.css";
+import "./assets/css/GlobalStyles.css";
+
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Items from "./Items";
